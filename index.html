@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trueflora Organics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f9f6;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+    nav {
+      background: #2c5f2d;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #2c5f2d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .privacy {
+      font-size: 0.9em;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .btn {
+      background: #6db572;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #2c5f2d;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trueflora Organics</h1>
+    <p>Nature’s Touch for Beautiful Hair</p>
+  </header>
+  <nav>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1600180758890-6dc8e01ec40c" alt="Shampoo" />
+        <h3>Herbal Shampoo</h3>
+        <p>100% organic formula with neem and aloe vera.</p>
+        <span class="btn">Add to Cart</span>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1612009688975-05b3a9e59e4d" alt="Shampoo 2" />
+        <h3>Spicy Root Cleanser</h3>
+        <p>Infused with ginger & turmeric for deep cleansing.</p>
+        <span class="btn">Add to Cart</span>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1616469832120-4734dd5dc76b" alt="Shampoo 3" />
+        <h3>Mint & Basil Cool Wash</h3>
+        <p>Cooling and refreshing herbal blend.</p>
+        <span class="btn">Add to Cart</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Trueflora</h2>
+    <p>Trueflora Organics creates premium organic hair care products using natural, chemical-free ingredients. Our mission is to bring health and vitality to your hair through eco-conscious beauty.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Order Now (Cash on Delivery)</h2>
+    <form action="mailto:truefloraorganics@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <input type="tel" name="Phone" placeholder="Phone Number" required />
+      <input type="text" name="Address" placeholder="Delivery Address" required />
+      <select name="Product">
+        <option value="Herbal Shampoo">Herbal Shampoo</option>
+        <option value="Spicy Root Cleanser">Spicy Root Cleanser</option>
+        <option value="Mint & Basil Cool Wash">Mint & Basil Cool Wash</option>
+      </select>
+      <textarea name="Notes" rows="4" placeholder="Any notes or instructions"></textarea>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <section id="privacy" class="privacy">
+    <h2>Privacy Policy</h2>
+    <p>We value your privacy. All customer data is protected and never shared with third parties. Emails and order data are only used for processing and shipping your orders. For more information, contact us at the email above.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trueflora Organics. All rights reserved.</p>
+  </footer>
+</body>
+</html>
